@@ -48,23 +48,9 @@ div.clear{
   visibility:hidden
 }
 
-span{
-  font-weight:700
-}
-
 ul{
   margin-top:5%;
   margin-bottom:5%
-}
-
-a{
-  text-decoration:none;
-  color:inherit
-}
-
-p{
-  margin-bottom:7px;
-  font-size:.9em
 }
 
 .container{
@@ -85,7 +71,7 @@ p{
   height:55px
 }
 
-.main{
+.container .main{
   float:left;
   max-width:610px;
   height:555px;
