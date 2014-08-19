@@ -42,6 +42,10 @@ module.exports.routes = {
 
   '/logout': {
     view: 'user/logout'
+  },
+
+  '/account': {
+    view: 'account/me'
   }
 
 
