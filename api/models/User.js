@@ -8,14 +8,17 @@
 
 module.exports = {
   attributes: {
-    email : {
+    email: {
       type: 'email',
       required: true,
       unique: true
     },
-    password : {
+    password: {
       type: 'string',
       required: true
+    },
+    backyard: {
+      model: 'backyard'
     }
   }
 };
