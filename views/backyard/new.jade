@@ -1,0 +1,10 @@
+extends ../layout
+block title 
+  | Register a new backyard
+block body
+  h2 Register your backyard
+  form(id="new_backyard", method="get", action="/backyard/create")
+    input(type="text" name="name" placeholder="name")
+    input(type="text" name="address" placeholder="address")
+    input(type="hidden" name="owner" value="1")
+    button(type="submit") Sign up

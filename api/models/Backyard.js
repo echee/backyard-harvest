@@ -1,10 +1,9 @@
 /**
- * Backyard
- *
- * @module      :: Model
- * @description :: A short summary of how this model works and what it represents.
- * @docs		:: http://sailsjs.org/#!documentation/models
- */
+* Backyard.js
+*
+* @description :: TODO: You might write a short summary of how this model works and what it represents here.
+* @docs        :: http://sailsjs.org/#!documentation/models
+*/
 
 module.exports = {
 
@@ -14,13 +13,18 @@ module.exports = {
       required: true,
       unique: true
     },
+    address: {
+      type: 'string',
+      required: true,
+      unique: true
+    },
     owner: {
-      model: "user"
+      model: "user",
+      required: true
     },
     produce: {
       collections: "produce",
-      via: "bakyards",
-      dominant: true
+      via: "backyards"
     }
   }
 };

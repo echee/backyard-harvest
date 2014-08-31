@@ -1,4 +1,4 @@
-doctype
+extends ./error_layout
 //
   |
   |   _  _    ___  _  _   
@@ -14,12 +14,9 @@ doctype
   | Sails considers a request to be in a "404: Not Found" state when a user
   | requests a URL which doesn't match any of your app's routes or blueprints.  
 
-html
-  head
-    title Page Not Found
-    link(href='http://sailsjs.org/styles/fonts.css', rel='stylesheet')
-    link(rel='stylesheet', type='text/css', href='/styles/styles.css')
-  body
+block title 
+  |Page Not Found
+block body
 
     .fourohfour
       .ocean

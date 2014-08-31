@@ -1,0 +1,16 @@
+extends ../layout
+block title 
+  | Add produce to your backyard
+block body
+  h2 Add produce
+  form(id="new_produce", method="get", action="/produce/create")
+    input(type="text" name="name" placeholder="name")
+    select
+      option(value="Fruit") Fruit
+      option(value="Vegetable") Vegetable
+    select
+      option(value="Summer") Summer
+      option(value="Autumn") Autumn
+      option(value="Winter") Winter
+      option(value="Spring") Spring
+    button(type="submit") Add Produce

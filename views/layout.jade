@@ -1,28 +1,35 @@
-doctype
+doctype html
 html
   head
-    title= title
+    title 
+        block title
 
     // Viewport mobile tag for sensible mobile support
     meta(name="viewport",content="width=device-width, initial-scale=1, maximum-scale=1")
     link(rel='stylesheet', type='text/css', href='/styles/styles.css')
-
+    link(type='text/css', href='http://sailsjs.org/styles/fonts.css', rel='stylesheet')
+    
     block styles
 
   body
-    .top-bar
-      .container.clearfix
-        img.logo(src='http://sailsjs.org/images/sails-logo.jpg')
-    .container.clearfix
-      block body
+      script(type='text/javascript').
+        setTimeout(function sunrise () {
+          document.getElementsByClassName('header')[0].style.backgroundColor = '#118798';
+        }, 0);
 
-    // A few key dependencies, linked in order
+      .default-page
+        .header
+          h1#main-title.container
+            | A brand new app.
+          h3.container
+            | You're looking at:
+            code
+              = view.pathFromApp + '.' + view.ext
+        .main.container.clearfix
+            block body
 
-    // Bring in the socket.io client
-    script(type="text/javascript", src="/js/socket.io.js")
+            // The linker searches for this tag and adds js.  If there's no linker, we point to sails.io.js
+            // SCRIPTS
+            script(src="/js/dependencies/sails.io.js")
+            // SCRIPTS END
 
-    // then beef it up with some convenience logic for talking to Sails.js'
-    script(type="text/javascript", src="/js/sails.io.js")
-
-    // listen on socket.io for incoming messages
-    script(type="text/javascript", src="/js/app.js")

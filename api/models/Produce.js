@@ -1,19 +1,21 @@
 /**
- * Produce
- *
- * @module      :: Model
- * @description :: A short summary of how this model works and what it represents.
- * @docs		:: http://sailsjs.org/#!documentation/models
- */
+* Produce.js
+*
+* @description :: TODO: You might write a short summary of how this model works and what it represents here.
+* @docs        :: http://sailsjs.org/#!documentation/models
+*/
 
 module.exports = {
 
   attributes: {
-  	name: "string",
-  	backyards: {
+    name: {
+      type : "string",
+      required: true,
+      unique: true
+    },
+    backyards: {
       collection: "backyard",
       via: "produce"
     }
   }
-
 };
