@@ -47,14 +47,21 @@ module.exports = {
   //   });
   // },
 
+  /**
+   * `UserController.validate()`
+   */
+  validate: function (req, res, next) {  
+    return res.json({
+      todo: 'validate() is not implemented yet!'
+    });
+  },
+
 
   /**
    * `UserController.login()`
    */
   login: function (req, res) {
-    return res.json({
-      todo: 'login() is not implemented yet!'
-    });
+    res.view();
   },
 
 
