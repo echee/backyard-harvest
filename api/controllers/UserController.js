@@ -8,6 +8,9 @@
 module.exports = {
 	
 
+  index: function (req, res) {
+    res.redirect('/');
+  },
 
   /**
    * `UserController.new()`
@@ -56,22 +59,6 @@ module.exports = {
     });
   },
 
-
-  /**
-   * `UserController.login()`
-   */
-  login: function (req, res) {
-    res.view();
-  },
-
-
-  /**
-   * `UserController.logout()`
-   */
-  logout: function (req, res) {
-    return res.json({
-      todo: 'logout() is not implemented yet!'
-    });
-  }
+  
 };
 
