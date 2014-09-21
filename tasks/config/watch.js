@@ -20,14 +20,6 @@ module.exports = function(grunt) {
 			// API files to watch:
 			files: ['api/**/*']
 		},
-    sass: {
-
-      // Sass assets to watch:
-      files: ['assets/styles/sass/*.{scss,sass}'],
-
-      // When assets are changed:
-      tasks: ['sass', 'compileAssets', 'linkAssets' ]
-    },  		
 		assets: {
 
 			// Assets to watch:

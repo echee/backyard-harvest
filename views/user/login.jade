@@ -1,9 +1,0 @@
-extends ../layout
-block title 
-  | Login to Backyard Harvest
-block body
-  h2 Login
-  form(id="login_user", method="get", action="/user/validate")
-    input(type="text" name="username" placeholder="username")
-    input(type="password" name="password" placeholder="password")
-    button(type="submit") Login
