@@ -1,0 +1,41 @@
+.header {
+  background: #2c3e50;
+  padding: $small-spacing*1.5 $small-spacing;
+  h1 {
+    font-size: 14px;
+    text-align: center;
+    &.back-link {
+      position: absolute;
+      top: 0;
+      left: $small-spacing*2;         
+    }
+    &.profile-link {
+      position: absolute;
+      top: 0;
+      right: $small-spacing*2;
+      &:hover {
+        cursor: pointer
+      }
+    }
+    &.profile-link, a {
+      display: block;
+      padding: 14px 0px;
+      .fa-chevron-left {
+        font-size: 22px;
+      }
+    }       
+  }
+}
+
+.header-title {
+  color: #fff; 
+  font-weight: 400; 
+  font-size: 21px;
+}
+
+h1, h2, h3, h4 {
+  font-size: inherit;
+  a {
+    color: inherit;
+  }
+}

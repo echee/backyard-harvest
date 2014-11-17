@@ -11,8 +11,35 @@ html
   body
     block body
 
+    block profile
+      .profile-container
+        .profile-close
+          span.fa.fa-close        
+        .user-avatar
+            img(src="http://lorempixel.com/output/abstract-q-c-97-97-1.jpg", alt="Profile Picture")
+        .user-name
+            h2 Emma Chee
+        .user-details
+          form(id="user-details", method="", action="/user/update/1")
+            ul.user-details-list
+              li
+                h3.form-heading Contact Information
+              li
+                label(for="username") User name
+                input(type="text" id="username" name="username")
+              li
+                label(for="password") Password
+                input(type="password" id="password" name="password")          
+              li
+                label(for="email") Email
+                input(type="email" id="email" name="email")
+            button(type="submit").button.large Save
+        .user-stats
+        a(href='').button.signout Sign Out    
+    script(src="https://code.jquery.com/jquery-2.1.1.min.js")
     // The linker searches for this tag and adds js.  If there's no linker, we point to sails.io.js
     // SCRIPTS
     script(src="/js/dependencies/sails.io.js")
+    script(src="/js/profile.js")
     // SCRIPTS END
 

@@ -1,0 +1,24 @@
+.button {
+  &.facebook {
+    background: #3b5998;
+    transition: opacity 300ms ease-out;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  &.signout {
+    background-color: #34495e;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: background-color 300ms ease-out;
+    &:hover {
+      background-color: #2c3e50;
+    }  
+  }
+  &.large {
+    width: 100%;
+  }
+}
+

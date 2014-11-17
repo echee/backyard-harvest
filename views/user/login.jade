@@ -1,0 +1,25 @@
+extends ./../layout
+
+
+block body
+  // Default home page
+  link(type='text/css', href='http://sailsjs.org/styles/fonts.css', rel='stylesheet')
+  link(rel='stylesheet', type='text/css', href='/styles/styles.css')
+
+  .header
+    h1.header-title.back-link
+      a(href='/welcome')
+        span.fa.fa-chevron-left  
+    h1.header-title
+      | Login
+  .main.container.clearfix
+    .login-container 
+      form(id="login-user", method="get", action="/user/validate")
+        ul
+          li
+            input(type="text" name="username" placeholder="username")
+          li
+            input(type="password" name="password" placeholder="password")
+        button(type="submit").button.large Login
+
+    

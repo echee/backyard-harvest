@@ -1,0 +1,17 @@
+extends ./../layout
+
+
+block body
+  // Default home page
+  link(type='text/css', href='http://sailsjs.org/styles/fonts.css', rel='stylesheet')
+  link(rel='stylesheet', type='text/css', href='/styles/styles.css')
+
+  .header
+    h1.header-title.back-link
+      a(href='/')
+        span.fa.fa-chevron-left
+    h1.header-title
+      | Favourites
+    h1.header-title.profile-link
+      | Profile
+  .main.container.clearfix

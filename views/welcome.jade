@@ -1,0 +1,23 @@
+extends ./layout
+
+
+block body
+  // Default home page
+  link(type='text/css', href='http://sailsjs.org/styles/fonts.css', rel='stylesheet')
+  link(rel='stylesheet', type='text/css', href='/styles/styles.css')
+
+  .main.container.clearfix
+  .welcome-container 
+    .welcome-heading
+      .welcome-icon
+        img(src="http://lorempixel.com/output/abstract-q-c-97-97-1.jpg", alt="Profile Picture")
+      .welcome-title
+        h1 Backyard Harvest
+    .welcome-information
+      img(src="http://lorempixel.com/400/200/sports/", alt="")
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae metus nec augue aliquet lacinia. Cras sed nisi sit amet quam imperdiet efficitur vitae tristique leo. Fusce mollis, nibh et tincidunt pretium, velit quam tincidunt enim, ut aliquet orci tellus sed libero. Sed facilisis sollicitudin vestibulum.
+    .welcome-options 
+      .options
+        a(href="/user/login").button Log in
+      .options
+        a(href="/user/new").button Sign up

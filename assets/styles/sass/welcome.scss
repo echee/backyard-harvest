@@ -1,0 +1,56 @@
+.welcome-container {
+  padding: 0 $small-spacing*2;
+  margin: $large-spacing auto 0;
+  max-width: 600px;
+  width: 100%;
+  .welcome-heading {
+    display: block;
+    overflow: hidden;
+    .welcome-icon, .welcome-title {
+      float: left;
+    }
+    .welcome-title {
+      margin-left: $small-spacing*2;
+      width: 60%;
+      font-size: 36px;
+      font-weight: bold;
+    }
+    .welcome-icon {
+      width: 40%;
+      max-width: 97px;
+      img {
+        border-radius: 100%;
+      }
+    }
+  }
+  .welcome-information {
+    margin: $small-spacing*2 0;
+    img {
+      width: 100%;
+    }
+    p {
+      margin-top: $small-spacing*2;
+    }
+  }
+  .welcome-options{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    .options{
+      width: 48%;
+      float: left;
+      &:first-child {
+        .button {
+          width: 100%;
+        }
+      }
+      &:last-child {
+        float: right;
+        .button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+

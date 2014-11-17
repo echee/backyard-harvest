@@ -1,0 +1,65 @@
+.profile-container {
+  background: $background-colour;
+  border: 1px solid black;
+  height: 100vh;
+  padding: $small-spacing*2;
+  position: fixed;
+  width: 100%;
+  top:100%;
+  transition: top 300ms ease-out;
+
+  &.open {
+    top:0;
+  }
+  .profile-close{
+    position: absolute;
+    top: $small-spacing;
+    left: $small-spacing;
+    padding: $small-spacing;
+    line-height: 24px;
+    font-size: 24px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.user-avatar img {
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.user-name {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-heading {
+  text-transform: uppercase;
+}
+
+.user-details {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  .user-details-list {
+    li {
+      border-bottom: 1px solid black;      
+      border-left: 1px solid black;      
+      border-right: 1px solid black;      
+      position: relative;
+      &:first-child {
+        border-top: 1px solid black;              
+        padding: $small-spacing/2 $small-spacing;
+      }
+    }
+  }
+  input {
+    border: none;
+    height: 40px;
+    padding: 10px;
+    text-indent: 100px;
+    text-align: right;
+  }
+}
+

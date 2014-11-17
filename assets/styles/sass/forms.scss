@@ -1,0 +1,27 @@
+form ul{
+  margin-bottom: $small-spacing;
+  li {
+    position: relative;
+    label { 
+      position: absolute;
+      left: $small-spacing;
+      top: $small-spacing;
+      span.fa{
+        color: $default-text;
+        font-size: 26px;
+        &.fa-envelope {
+          line-height: 28px;
+          font-size: 20px;
+        }
+        &.fa-lock {
+          font-size: 34px;
+          line-height: 30px;
+        }
+      }
+    }  
+    input {
+      text-indent: 25px;
+      width: 100%;
+    }
+  }
+}

@@ -34,5 +34,9 @@
     "url": "git://github.com/echee/backyard-harvest.git"
   },
   "author": "echee",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "grunt-contrib-sass": "^0.8.1",
+    "jquery": "^2.1.1"
+  }
 }

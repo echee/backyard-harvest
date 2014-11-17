@@ -1,0 +1,73 @@
+extends ./../layout
+
+
+block body
+  // Default home page
+  link(type='text/css', href='http://sailsjs.org/styles/fonts.css', rel='stylesheet')
+  link(rel='stylesheet', type='text/css', href='/styles/styles.css')
+
+  .header
+    h1.header-title.back-link
+      a(href="/")
+        span.fa.fa-chevron-left       
+    h1.header-title
+      | Produce
+    h1.header-title.profile-link
+      | Profile
+
+  .main.container.clearfix
+    form(id="search-produce", method="", action="")
+      input(type="text")
+      button.button
+        span.fa.fa-search
+      .search-container
+        .search-term
+          | Carrots
+        button.button
+          span.fa.fa-close
+    .map
+    ul.produce-list
+      li.produce-item
+        .produce-details
+          h2 Grower: echee
+          h2 Location: 
+          h2 Qty Available: 
+        .produce-actions
+          a(href="").favourite
+            span.fa.fa-star-o
+          a(href="").add
+            span.fa.fa-plus
+      li.produce-item
+        .produce-details
+          h2 Grower: echee
+          h2 Location: 
+          h2 Qty Available: 
+        .produce-actions
+          a(href="").favourite
+            span.fa.fa-star-o
+          a(href="").add
+            span.fa.fa-plus
+      li.produce-item
+        .produce-details
+          h2 Grower: echee
+          h2 Location: 
+          h2 Qty Available: 
+        .produce-actions
+          a(href="").favourite
+            span.fa.fa-star-o
+          a(href="").add
+            span.fa.fa-plus
+      li.produce-item
+        .produce-details
+          h2 Grower: echee
+          h2 Location: 
+          h2 Qty Available: 
+        .produce-actions
+          a(href="").favourite
+            span.fa.fa-star-o
+          a(href="").add
+            span.fa.fa-plus            
+
+    .options.two
+      a.button.active List
+      a.button Map
