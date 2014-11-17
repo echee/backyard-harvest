@@ -1,0 +1,81 @@
+extends ./layout
+
+
+block body
+  // Default home page
+  link(type='text/css', href='http://sailsjs.org/styles/fonts.css', rel='stylesheet')
+  link(rel='stylesheet', type='text/css', href='/styles/styles.css')
+
+  .header
+    h1.header-title
+      | Home
+    h1.header-title.profile-link
+      |Profile
+  .main.container.clearfix
+    ul.home-list
+      li.home-list-item
+        a(href="/user/backyard")
+          .item-icon
+            .icon-container
+              .icon
+          .item-details
+            h2.item-title
+              |Your Backyard
+            h3.item-subtitle
+              |Edit your Backyard details and produce.
+      li.home-list-item
+        a(href="/produce/search")
+          .item-icon
+            .icon-container
+              .icon
+          .item-details
+            h2.item-title
+              |Find Produce
+            h3.item-subtitle
+              |Look up produce being grown around you.      
+      li.home-list-item
+        a(href="/user/favourites")
+          .item-icon
+            .icon-container
+              .icon
+          .item-details
+            h2.item-title
+              |Favourites
+            h3.item-subtitle
+              |A list of all your favourite backyards and produce.
+      li.home-list-item
+        a(href="/user/harvest")      
+          .item-icon
+            .icon-container
+              .icon
+          .item-details
+            h2.item-title
+              |Harvest List
+            h3.item-subtitle
+              |A list of produce you've select for harvesting.
+    h3.container
+      | You're looking at:
+      code
+        = view.pathFromApp + '.' + view.ext    
+    h2 User Actions
+    ul
+      li
+        a(href="/user/new", target="") Create new user
+      li
+        a(href="/user/update", target="") Update user
+    hr
+    h2 Produce Actions
+    ul
+      li
+        a(href="/produce/new", target="") Create new produce
+      li
+        a(href="/produce/update", target="") Update produce
+    hr
+    h2 Backyard Actions
+    ul
+      li
+        a(href="/backyard/new", target="") Create new backyard
+      li
+        a(href="/backyard/update", target="") Update backyard
+
+
